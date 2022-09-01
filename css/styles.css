@@ -25,7 +25,7 @@ ul {
 .telephone:focus,
 .telephone:hover,
 .mail:focus,
-.mail:hover{
+.mail:hover {
 	color: var(--accent-color);
 }
 /* Header */
@@ -46,39 +46,38 @@ ul {
 
 /* Navigation */
 .link {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
 }
 
 .nav-list__link {
-  color: var(--main-dark);
+	color: var(--main-dark);
 }
 
 .nav:focus,
 .nav:hover,
 .active {
-  color: var(--main-hover);
+	color: var(--main-hover);
 }
 
 .list {
-  list-style: none;
+	list-style: none;
 }
 
 .nav-list {
 }
 
 .header-container {
-  border-bottom: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
 }
 
 .nav-list__item {
-
 }
 
 .nav-container {
