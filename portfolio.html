@@ -5,117 +5,157 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebStudia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-<body class="page">
-  <!-- Header -->
-  <header class="header header-container">
-    <!--Navigation-->
-    <nav>
-      <a class="logo" href="./index.html"><span class="logo-color">Web</span><span class="logo-colors">Studio</span></a>
-      <ul class="nav-list list">
-        <li class="nav-list__item">
-          <a href="./index.html" class="nav-list__link nav link">Студія</a>
+<body>
+  <header class="header border">
+    <div class="container header-container">
+      <nav class="nav-container">
+        <a href="./index.html" class="nav-logo link"><span class="nav-span">Web</span>Studio</a>
+        <ul class="nav-list list">
+          <li class="nav-list__item">
+            <a href="./index.html" class="nav-list__link nav link">Студія</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="./portfolio.html" class="nav-list__link active nav link">Портфоліо</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link nav link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contact-list list">
+        <li class="contact-list__item">
+          <a href="mailto:info@devstudio.com" class="contact-list__mail nav link"> info@devstudio.com</a>
         </li>
-        <li class="nav-list__item">
-          <a href="./portfolio.html" class="nav-list__link active nav link">Портфоліо</a>
+        <li class="contact-list__item">
+          <a href="tel:+380961111111" class="contact-list__tel nav link">+38 096 111 11 11</a>
         </li>
-        <li class="nav-list__item"><a href="#" class="nav-list__link nav link">Контакти</a></li>
       </ul>
-    </nav>
-    <!--Contact us-->
-    <ul class="auth-nav list">
-      <li>
-        <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com
-        </a>
-      </li>
-      <li><a href="tel:+380961111111" class="telephone">+380961111111</a></li>
-    </ul>
+    </div>
   </header>
 
-  <main class="main">
-    <section class="portfolio">
-      <h1 hidden>Портфоліо</h1>
-      <ul class="filter list">
-        <li class="filter-item"><button class="filter-btn-one" type="button">Усі</button></li>
-        <li class="filter-item"><button class="filter-btn" type="button">Додатки</button></li>
-        <li class="filter-item"><button class="filter-btn" type="button">Веб-сайти</button></li>
-        <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
-        <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
-      </ul>
+  <main>
+    <section class="section cards">
+      <div class="container">
+        <h1 class="visually-hidden">Портфоліо</h1>
+        <ul class="btn-list list">
+          <li class="btn-list__item"><button type="button" class="btn-list__one btn current-btn">Усі</button></li>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__two btn">Веб-сайти</button>
+          </li>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__three btn">Додатки</button>
+          </li>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__four btn">Дизайн</button>
+          </li>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__five btn">Маркетинг</button>
+          </li>
+        </ul>
 
-      <ul>
-        <li>
-          <img src="./img/portfolioone.jpg" alt="notebook" width="370" height="294" />
-          <h2 class="filer-title">Технокряк</h2>
-          <p class="filter-text">Веб-сайт</p>
-        </li>
-        <li>
-          <img src="./img/portfoliotwo.jpg" alt="basket" width="370" height="294" />
-          <h2 class="filer-title">Постер New Orlean vs Golden</h2>
-          <p class="filter-text">Дизайн</p>
-        </li>
-        <li>
-          <img src="./img/portfoliothree.jpg" alt="seafood" width="370" height="294" />
-          <h2 class="filer-title">Ресторан Seafood</h2>
-          <p class="filter-text">Додаток</p>
-        </li>
-        <li>
-          <img src="./img/portfoliofour.jpg" alt="headphones" width="370" height="294" />
-          <h2 class="filer-title">Проект Prime</h2>
-          <p class="filter-text">Маркетинг</p>
-        </li>
-        <li>
-          <img src="./img/portfoliofive.jpg" alt="boxes" width="370" height="294" />
-          <h2 class="filer-title">Проєкт Boxes</h2>
-          <p class="filter-text">Додаток</p>
-        </li>
-        <li>
-          <img src="./img/portfoliosix.jpg" alt="desktop" width="370" height="294" />
-          <h2 class="filer-title">Inspiration has no Borders</h2>
-          <p class="filter-text">Веб-сайт</p>
-        </li>
-        <li>
-          <img src="./img/portfolioseven.jpg" alt="book" width="370" height="294" />
-          <h2 class="filer-title">Видання Limited Edition</h2>
-          <p class="filter-text">Дизайн</p>
-        </li>
-        <li>
-          <img src="./img/portfolioeight.jpg" alt="tag" width="370" height="294" />
-          <h2 class="filer-title">Проєкт LAB</h2>
-          <p class="filter-text">Маркетинг</p>
-        </li>
-        <li>
-          <img src="./img/portfolionine.jpg" alt="bussines" width="370" height="294" />
-          <h2 class="filer-title">Growing Business</h2>
-          <p class="filter-text">Додаток</p>
-        </li>
-      </ul>
+        <ul class="cards-list list">
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfolioone.jpg" alt="laptop" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Технокряк</h2>
+              <p class="cards-list__subtitle">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfoliotwo.jpg" alt="poster" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Постер New Orlean vs Golden Star</h2>
+              <p class="cards-list__subtitle">Дизайн</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfoliothree.jpg" alt="restaurant-logo" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Ресторан Seafood</h2>
+              <p class="cards-list__subtitle">Додаток</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfoliofour.jpg" alt="headphones" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Проєкт Prime</h2>
+              <p class="cards-list__subtitle">Маркетинг</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfoliofive.jpg" alt="box" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Проєкт Boxes</h2>
+              <p class="cards-list__subtitle">Додаток</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfoliosix.jpg" alt="monitor" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Inspiration has no Borders</h2>
+              <p class="cards-list__subtitle">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfolioseven.jpg" alt="book" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Видання Limited Edition</h2>
+              <p class="cards-list__subtitle">Дизайн</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfolioeight.jpg" alt="tag" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Проєкт LAB</h2>
+              <p class="cards-list__subtitle">Маркетинг</p>
+            </div>
+          </li>
+          <li class="cards-list__item">
+            <img src="./images/portfolio/portfolionine.jpg" alt="mackbook" width="370" />
+            <div class="cards-list__container">
+              <h2 class="cards-list__header">Growing Business</h2>
+              <p class="cards-list__subtitle">Додаток</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <!--Footer-->
   <footer class="footer">
-    <a class="logo" href="./index.html"><span class="logo-color">Web</span>Studio</a>
-    <address class="address">
-      <ul class="footer-list">
-        <li>
-          <a class="address-map" href="https://goo.gl/maps/WjBcnWm2Ct8K63m86">м.Київ, пр-т Лесі Українки, 26</a>
-        </li>
-        <li>
-          <a class="address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="address-tel" href="tel:+380961111111">+380961111111</a>
-        </li>
-      </ul>
-    </address>
+    <div class="container">
+      <a href="./index.html" class="footer-logo link"><span class="footer-span">Web</span>Studio</a>
+      <address class="address">
+        <ul class="list">
+          <li class="footer-list__item">
+            <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+              class="footer-list__address f-nav link" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т
+              Лесі Українки, 26</a>
+          </li>
+
+          <li class="footer-list__item">
+            <a href="mailto:info@devstudio.com" class="footer-list__link f-nav link" lang="en">info@devstudio.com</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="tel:+380961111111" class="footer-list__link f-nav link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </footer>
+  </ul>
+  </address>
+  </div>
   </footer>
 </body>
 
